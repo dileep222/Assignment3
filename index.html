@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jenny’s Bookstore</title>
+		<!-- Importing stylesheet -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- Header Element for Print shop name and logo -->
+		<header>
+			<div class="header__container">
+				<h2><a href="index.html">Jenny’s Bookstore</a></h2>
+				<ul>
+					<!-- Navbar link to homepage -->
+					<li><a href="index.html">Home</a></li>
+					<!-- Navbar link to shop page -->
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<img src="./images/notebook.jpg" alt="drawers image" class="image" />
+				<section class="container__section">
+					<h2>
+						Notebook
+					</h2>
+					<p>
+						A notebook is a blank book that you can write in. Students often carry notebooks, where they can take notes (and doodle). We offer high quality notebooks that last a long time
+					</p>
+					<div class="d-flex">
+						<div id="notebook-price" class="price d-none">$<span>12.00</span><br />/notebook</div>
+						<!-- Two buttons - one to show and another one to hide the prices -->
+						<button id="notebook-show" class="more__info" onclick="showPrice(event)">
+							See Prices
+						</button>
+						<!-- This button is hidden initially -->
+						<button id="notebook-hide" class="more__info d-none" onclick="hidePrice(event)">
+							Hide Prices
+						</button>
+					</div>
+				</section>
+			</div>
+			<div class="container">
+				<img src="./images/pen.jpg" alt="drawers image" class="image" />
+				<section class="container__section">
+					<h2>
+						Pens
+					</h2>
+					<p>
+						A pen is a common writing instrument used to apply ink to a surface, usually paper, for writing or drawing. We sell all sorts of pen ranging from lower to upper budget.
+					</p>
+					<div class="d-flex">
+						<div id="pen-price" class="price d-none">$<span>2.50</span><br />/color</div>
+						<!-- Two buttons - one to show and another one to hide the prices -->
+						<button id="pen-show" class="more__info" onclick="showPrice(event)">
+							See Prices
+						</button>
+						<!-- This button is hidden initially -->
+						<button id="pen-hide" class="more__info d-none" onclick="hidePrice(event)">
+							Hide Prices
+						</button>
+					</div>
+				</section>
+			</div>
+			<div class="container">
+				<img src="./images/bag.jpg" alt="drawers image" class="image" />
+				<section class="container__section">
+					<h2>
+						Bags
+					</h2>
+					<p>
+						A bag is a kind of soft container. It can hold or carry things. A bag may have one or two handles or a shoulder strap. From plastic to leather, we offer all sorts of bags
+					</p>
+					<div class="d-flex">
+						<div id="bag-price" class="price d-none">$<span>32.50</span><br />/color</div>
+						<!-- Two buttons - one to show and another one to hide the prices -->
+						<button id="bag-show" class="more__info" onclick="showPrice(event)">
+							See Prices
+						</button>
+						<!-- This button is hidden initially -->
+						<button id="bag-hide" class="more__info d-none" onclick="hidePrice(event)">
+							Hide Prices
+						</button>
+					</div>
+				</section>
+			</div>
+		</main>
+		<!-- Importing jQuery -->
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+		<!-- Importing javascript -->
+		<script src="script.js"></script>
+		<script src="Assignment.js"></script>
+
+	</body>
+</html>

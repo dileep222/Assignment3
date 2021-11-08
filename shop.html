@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jenny’s Bookstore</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+        <!-- Header to show the head details-->
+		<header>
+			<div class="header__container">
+				<h2><a href="index.html">Jenny’s Bookstore</a></h2>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="shop.html">Shop</a></li>
+				</ul>
+			</div>
+		</header>
+
+        <div class="form-container">
+            <form>
+                <div class="field">
+                    <label for="notebookinput">No of notebooks: 
+                        <input type="text" id="notebookinput" name="notebookinput">
+                    </label>
+                    <small class="error" id="notebookerror"></small>
+                </div>
+                <div class="field">
+                    <label for="peninput">No of pens: 
+                        <input type="text" id="peninput" name="peninput">
+                    </label>
+                    <small class="error" id="penerror"></small>
+                </div>
+                <div class="field">
+                    <label for="baginput">No of bags: 
+                        <input type="text" id="baginput" name="baginput">
+                    </label>
+                    <small class="error" id="bagerror"></small>
+                </div>
+                <div class="field">
+                    <label for="name">Name: 
+                        <input type="text" id="name" name="name">
+                    </label>
+                    <small class="error" id="nameerror"></small>
+                </div>
+                <div class="field">
+                    <label for="name">CustomerNumber: 
+                        <input type="text" id="customernumber" name="customernumber">
+                    </label>
+                    <small class="error" id="customernumbererror"></small>
+                </div>
+                <small class="error" id="inputerror"></small>
+                <button class="submit" onclick=submitForm(event)>Submit</button>
+            </form>
+            <div class="receipt">
+                <div class="customer" id="customer"></div>
+                <div class="cnumber" id="cnumber"></div>
+                <table class="table" id="table">
+                    <tbody id="tbody">
+                      <tr class="Checkout">
+                        <th class="cell">Item Name</th>
+                        <th class="cell">Quantity</th>
+                        <th class="cell">Unit Price</th>
+                        <th class="cell">Total Price</th>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+		</main>
+		<script src="script.js"></script>
+	</body>
+</html>
